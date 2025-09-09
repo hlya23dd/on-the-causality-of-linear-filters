@@ -8,9 +8,9 @@
 
 A linear filter can be expressed as the convolution of an input signal
 *x*\[*t*\] with the filter’s impulse response *h*\[*τ*\]:
-$$\begin{equation}
-    y\[t\]=\sum\_{\tau=-\infty}^{\infty} x\[t-\tau\]h\[\tau\].
-\end{equation}$$
+$$
+y[t] = \sum_{\tau=-\infty}^{\infty} x[t-\tau]h[\tau].
+$$
 It is causal if *h*\[*τ* \< 0\] = 0.
 
 A filter’s frequency response is given by the Fourier transformation of
