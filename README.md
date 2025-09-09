@@ -1,22 +1,8 @@
-on the causality of linear filters
+
+## Illustration of the difference between causal and noncausal filtering
 
 ![hippo](./filter_animation.gif)
 
-
-## Illustration of the difference
-
-An animation illustrating the difference between causal and non-causal
-filtering is available at the following link:
-<https://hlya23dd.github.io/on-the-causality-of-linear-filters/>
-
-<figure id="fig:video" data-latex-placement="h!">
-<p><a
-href="https://hlya23dd.github.io/on-the-causality-of-linear-filters/">
-<img src="img_supp/frame_115.png" style="width:80.0%" alt="image" />
-</a></p>
-<figcaption>Illustration of difference between causal and noncausal
-filters (Click the image to view the video).</figcaption>
-</figure>
 
 ## Time lag and waveform distortion of causal filters
 
