@@ -7,25 +7,30 @@
 ## Time lag and waveform distortion of causal filters
 
 A linear filter can be expressed as the convolution of an input signal
-*x*\[*t*\] with the filter’s impulse response *h*\[*τ*\]:
+$`x[t]`$ with the filter’s impulse response  $`h[\tau]`$:
+
 $$
 y[t] = \sum_{\tau=-\infty}^{\infty} x[t-\tau]h[\tau].
 $$
-It is causal if *h*\[*τ* \< 0\] = 0.
+
+It is causal if $`h[\tau<0]=0`$.
 
 A filter’s frequency response is given by the Fourier transformation of
-*h*\[*τ*\]:
-*H*(*ω*) = ℱ{*h*\[*τ*\]} = *A*(*ω*)*e*<sup>*j**θ*(*ω*)</sup>.
-where *A*(*ω*) is the magnitude gain or attenuation, and *θ*(*ω*) the
-phase shift.
+$`h[\tau]`$:
 
-For an ideal filter, *A*(*ω*) equals 1 in the passband and 0 elsewhere.
+$$
+H(\omega)= \mathcal{F}\{h[\tau]\} = A(\omega)e^{j\theta(\omega)}.
+$$
+
+where $`A(\omega)`$ is the magnitude gain or attenuation, and $`\theta(\omega)`$ the phase shift.
+
+For an ideal filter, $`A(\omega)`$ equals 1 in the passband and 0 elsewhere.
 Realizable filters deviate from this, causing **magnitude distortion**.
 Achieving sharper magnitude transitions requires higher-order IIR
 filters or wider FIR filters.
 
 **Causal filters necessarily introduce phase shift (time lag)**. To see
-this, note that since *h*\[*τ*\] is real, the frequency response has the
+this, note that since $`h[\tau]`$ is real, the frequency response has the
 symmetry *A*(−*ω*) = *A*(*ω*), *θ*(−*ω*) = −*θ*(*ω*). If phase shift
 *θ*(*ω*) = 0 for all *ω*, then *H*(*ω*) is real and *h*\[*τ*\] must be
 even (*h*\[−*τ*\] = *h*\[*τ*\]), which contradicts the causality
